@@ -1,1 +1,15 @@
 # Add plugins here
+# code hosting services
+sentry-github
+sentry-gitlab
+sentry-bitbucker
+# messaging clients
+sentry-irc
+sentry-slack
+sentry-hipchat
+# bug tracking
+sentry-jira
+sentry-trello
+sentry-pivotal
+# webhooks
+sentry-webhooks
