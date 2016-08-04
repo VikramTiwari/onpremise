@@ -2,7 +2,7 @@
 # code hosting services
 sentry-github
 sentry-gitlab
-sentry-bitbucker
+sentry-bitbucket
 # messaging clients
 sentry-irc
 sentry-slack

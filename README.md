@@ -15,9 +15,18 @@ Official bootstrap for running your own [Sentry](https://getsentry.com/) with [D
 
 ## Follow following steps:
 ```
-sudo apt-get install build-essential checkinstall
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get install -y build-essential checkinstall
 curl -sSL https://get.docker.com/ | sh
+sudo usermod -aG docker ${USER}
 
+sudo apt-get install -y zip
+wget https://github.com/VikramTiwari/onpremise/archive/master.zip
+unzip master.zip
+cd onpremise-master
+
+docker login
 REPOSITORY=vikramtiwari/sentry make build push
 
 docker run --detach --name sentry-redis redis:3.2-alpine
